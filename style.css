@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bbffbb;
+    background: -webkit-gradient(linear, left bottom, left top, from(#bbffbb), color-stop(50%, #00ffff), to(#bbffbb));
+    background: -o-linear-gradient(bottom, #bbffbb 0%, #00ffff 50%, #bbffbb 100%);
+    background: linear-gradient(bottom, #bbffbb 0%, #00ffff 50%, #bbffbb 100%);
+    padding: 0 5vw;
+    overflow: hidden;
+}
+
+h1 {
+    color: #bfbfff;
+}
+
+header {
+    background: #0080f0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#4000f0), color-stop(50%, #0080f0), to(#4000f0));
+    background: -o-linear-gradient(bottom, #4000f0 0%, #0080f0 50%, #4000f0 100%);
+    background: linear-gradient(bottom, #4000f0 0%, #0080f0 50%, #4000f0 100%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav {
+    font-variant: small-caps;
+    font-size: 150%;
+}
+
+nav a {
+    width: 47%;
+    display: inline-block;
+    background-color: #bfbfff;
+    text-decoration: none;
+    -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    background: #ffffff;
+    -webkit-text-decoration: underline #4000f0;
+    text-decoration: underline #4000f0;
+}
+
+h2 {
+    background: #4000f0;
+    color: #bfbfff;
+}
+
+footer {
+    background: #4000f0;
+    color: #bfbfff;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+    min-height: 100vh;
+    margin-bottom: -75px;
+}
+
+#container::after {
+    content: "";
+    display: block;
+    height: 75px;
+}
+
+#logo {
+    width: 5vw;
+}
+
+@media screen and (min-width: 1024px) {
+    nav a {
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    #container{
+        margin-bottom: -125px;
+    }
+
+    #container::after {
+        height: 100px;
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    footer {
+        padding-bottom: 50px;
+    }
+}
